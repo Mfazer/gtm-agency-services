@@ -1,21 +1,48 @@
-# GTM Practice - Services page
+# GTM Practice Website Preview
 
-A single-page, responsive HTML services page prepared for GitHub Pages.
+Static HTML/CSS/JavaScript website. No build step or package installation is required.
+
+## Project structure
+
+```text
+/
+├── index.html
+├── assets/
+│   └── work.css
+└── work/
+    ├── institutional-rwa-case-study.html
+    ├── gtm-strategy-blueprint.html
+    ├── market-intelligence-explorer.html
+    └── gtm-systems-architecture.html
+```
+
+## Preview locally
+
+Open `index.html` in a browser. The linked pages use relative paths, so keep the folder structure intact. For a local server, run:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
 
 ## Publish with GitHub Pages
 
-1. Create a GitHub repository, for example `gtm-agency-services`.
-2. Upload `index.html` to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose the `main` branch and `/ (root)`, then save.
-6. GitHub will provide the public Pages URL after deployment.
+1. Upload the complete project folder contents to the repository root. Do not upload the ZIP itself.
+2. Keep `index.html` at the repository root and preserve the `assets/` and `work/` folders.
+3. In repository Settings, open Pages.
+4. Select Deploy from a branch, choose `main` and `/ (root)`, then save.
+5. Open the Pages URL after deployment completes.
 
-## Before publishing
+## Content and data status
 
-- Replace the temporary client-mark placeholders with approved client identities, or remove the strip.
-- Add the agency's final name and contact details.
-- Connect the project form to an inbox, CRM, or form endpoint. The current form is a visual preview and does not send submissions.
-- Review all service descriptions and legal/privacy requirements.
+- The GTM Strategy Blueprint uses a fictional B2B operations software scenario.
+- The Market Intelligence Explorer uses fictional companies, accounts, events and scores. All are illustrative sample data.
+- The GTM Systems Architecture is a conceptual workflow demonstration. It is not connected to live systems.
+- The Kaizen page is a review draft based on project proposal and service-scope materials. It distinguishes documented diagnosis, proposed scope and delivery status. It does not claim unverified outcomes or completed deliverables.
+- The Kaizen page is marked `noindex` while delivery status and publication permission are being reviewed. Remove that directive only after approval for public release.
+- The case page includes a client-name toggle so the named and anonymised presentation can be reviewed. Confirm the client's permission before publishing the named version.
 
-The page uses Google Fonts (Inter). A network connection is required to load the web font; system sans-serif fallbacks are included.
+## Before public release
+
+Confirm which Kaizen workstreams were completed and accepted, which assets went live, what outcomes can be evidenced, and whether the client name may be published. Do not replace the current status notes with claims until supporting records are available.

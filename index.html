@@ -204,6 +204,52 @@
     .footer-links { display: flex; gap: 23px; }
     .footer-links a:hover { color: var(--green-3); }
 
+
+    /* Selected work & interactive demonstrations */
+    .work-section { padding: clamp(80px, 9vw, 132px) 0 clamp(86px, 9vw, 130px); }
+    .work-heading { display: grid; grid-template-columns: minmax(0,1fr) minmax(270px,.6fr); align-items: end; gap: 40px; margin-bottom: 40px; }
+    .work-heading h2 { max-width: 790px; margin: 0; font-size: clamp(42px, 6vw, 82px); line-height: .93; font-weight: 500; letter-spacing: -.083em; }
+    .work-heading > p { max-width: 420px; margin: 0 0 4px; color: #5e685f; font-size: 13px; line-height: 1.7; }
+    .work-feature { display: grid; grid-template-columns: minmax(0,.95fr) minmax(0,1.05fr); min-height: 410px; overflow: hidden; background: #e5ebe4; border-radius: 26px; }
+    .work-feature-copy { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(30px, 4.1vw, 58px); }
+    .work-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .work-chip { display: inline-flex; align-items: center; min-height: 27px; padding: 0 10px; color: #33483a; background: rgba(255,255,255,.65); border-radius: 999px; font-size: 9px; font-weight: 650; letter-spacing: .06em; text-transform: uppercase; }
+    .work-feature h3 { max-width: 560px; margin: 0; font-size: clamp(38px, 4.7vw, 63px); line-height: .98; font-weight: 500; letter-spacing: -.08em; }
+    .work-feature-copy > p { max-width: 490px; margin: 19px 0 25px; color: #59665b; font-size: 13px; line-height: 1.7; }
+    .work-link { display: inline-flex; align-items: center; gap: 14px; margin-top: auto; min-height: 46px; padding: 5px 6px 5px 17px; border-radius: 999px; color: #f4f5f0; background: #1d2c23; font-size: 11px; font-weight: 650; transition: transform .2s ease, background .2s ease; }
+    .work-link:hover { transform: translateY(-2px); background: #334b3a; }
+    .work-link span { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; color: #1d2c23; background: #dce8dc; font-size: 16px; }
+    .work-feature-visual { position: relative; min-height: 410px; overflow: hidden; display: grid; place-items: center; padding: 35px; background: radial-gradient(ellipse at 48% 46%, rgba(255,255,255,.88), transparent 49%), linear-gradient(135deg,#d6dfd7,#c6d2c8); }
+    .work-visual-sheet { position: absolute; width: min(68%, 370px); aspect-ratio: .78; border-radius: 11px; background: #f8f8f4; box-shadow: 0 25px 65px rgba(28,46,34,.16); transform: rotate(-7deg) translate(-22px, 4px); padding: 24px; }
+    .work-visual-sheet.back { transform: rotate(8deg) translate(42px, -4px); background: #eef1eb; }
+    .work-visual-label { color: #778177; font-size: 8px; letter-spacing: .13em; text-transform: uppercase; }
+    .work-visual-title { max-width: 230px; margin-top: 22px; color: #26382d; font-size: clamp(22px, 3vw, 34px); line-height: .98; letter-spacing: -.07em; }
+    .work-visual-map { position: relative; height: 45%; margin-top: 18px; overflow: hidden; border-radius: 7px; background: linear-gradient(125deg,#dce4da,#bfcdbf); }
+    .work-visual-map::before { content: ""; position: absolute; inset: 12% 18%; border: 1px solid rgba(50,75,57,.28); border-radius: 46% 52% 38% 55%; transform: rotate(-18deg) skewY(10deg); }
+    .work-visual-map::after { content: ""; position: absolute; width: 70%; height: 2px; top: 51%; left: 16%; background: #607d69; transform: rotate(-25deg); box-shadow: 30px -30px 0 -0.3px #607d69; }
+    .work-visual-nodes { display: flex; gap: 7px; margin-top: 12px; }
+    .work-visual-nodes span { flex: 1; height: 5px; border-radius: 9px; background: #d6dfd5; }
+    .work-demo-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; margin-top: 14px; }
+    .work-demo-card { min-height: 275px; display: flex; flex-direction: column; align-items: flex-start; padding: 26px 25px 23px; border-radius: 19px; background: #fff; transition: transform .25s var(--ease), box-shadow .25s ease; }
+    .work-demo-card:hover { transform: translateY(-4px); box-shadow: 0 18px 42px rgba(26,44,33,.08); }
+    .work-demo-type { color: #788379; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+    .work-demo-card h3 { margin: 22px 0 10px; font-size: clamp(22px, 2.5vw, 31px); line-height: 1.02; font-weight: 500; letter-spacing: -.065em; }
+    .work-demo-card p { max-width: 360px; margin: 0 0 25px; color: #687169; font-size: 11px; line-height: 1.65; }
+    .work-demo-card a { display: inline-flex; align-items: center; gap: 11px; margin-top: auto; color: #2e4637; font-size: 11px; font-weight: 650; }
+    .work-demo-card a span { transition: transform .2s ease; }
+    .work-demo-card a:hover span { transform: translate(3px,-3px); }
+    .work-demo-mark { width: 100%; height: 70px; display: flex; align-items: center; gap: 7px; margin-top: 19px; }
+    .demo-mark-node { position: relative; flex: 1; height: 34px; display: grid; place-items: center; border: 1px solid #dce4dc; border-radius: 8px; color: #617265; background: #f4f7f2; font-size: 8px; }
+    .demo-mark-node + .demo-mark-node::before { content: ""; position: absolute; width: 7px; height: 1px; left: -7px; top: 50%; background: #95a397; }
+    .demo-mark-bars { display: flex; align-items: end; gap: 5px; height: 47px; width: 100%; padding: 0 5px; }
+    .demo-mark-bars span { flex: 1; border-radius: 4px 4px 0 0; background: #cbd8cb; }
+    .demo-mark-bars span:nth-child(1) { height: 35%; }.demo-mark-bars span:nth-child(2) { height: 57%; }.demo-mark-bars span:nth-child(3) { height: 48%; }.demo-mark-bars span:nth-child(4) { height: 82%; }.demo-mark-bars span:nth-child(5) { height: 100%; }
+    .demo-mark-flow { width: 100%; height: 65px; display: flex; align-items: center; justify-content: space-between; gap: 5px; }
+    .demo-mark-flow i { width: 23px; height: 23px; display: block; border: 1px solid #9eafa1; border-radius: 6px; background: #edf2ec; transform: rotate(45deg); }
+    .demo-mark-flow b { width: 10px; height: 1px; background: #9eafa1; }
+    @media (max-width: 920px) { .work-heading { grid-template-columns: 1fr; gap: 19px; }.work-demo-grid { grid-template-columns: 1fr 1fr; }.work-demo-card:last-child { grid-column: 1 / -1; min-height: 230px; } }
+    @media (max-width: 680px) { .work-section { padding: 72px 0 86px; }.work-heading { margin-bottom: 28px; }.work-feature { grid-template-columns: 1fr; border-radius: 21px; }.work-feature-copy { padding: 27px 22px 24px; }.work-feature h3 { font-size: 43px; }.work-feature-visual { min-height: 300px; }.work-visual-sheet { width: 56%; }.work-demo-grid { grid-template-columns: 1fr; gap: 10px; }.work-demo-card, .work-demo-card:last-child { min-height: 235px; grid-column: auto; padding: 23px 21px; }.work-demo-card h3 { margin-top: 17px; font-size: 27px; } }
+
     /* Motion and responsive behaviour */
     .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
     .reveal.is-visible { opacity: 1; transform: translateY(0); }
@@ -305,6 +351,7 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#capabilities">Services</a>
         <a href="#specialist-programs">Specialist programs</a>
+        <a href="#selected-work">Selected work</a>
         <a href="#approach">How we work</a>
         <a class="nav-contact" href="#contact">Let's talk <span class="nav-contact-icon" aria-hidden="true">↗</span></a>
       </nav>
@@ -320,7 +367,7 @@
         <a class="hero-link" href="#capabilities">Explore what we do <span aria-hidden="true">↓</span></a>
       </div>
 
-      <div class="client-strip" id="selected-work" aria-label="Temporary client logo placeholders">
+      <div class="client-strip" id="selected-teams" aria-label="Temporary client logo placeholders">
         <div class="client-strip-head">
           <p class="client-strip-title">Selected teams</p>
           <p class="client-strip-note">Temporary logo placeholders. Replace with approved client marks before publishing.</p>
@@ -498,6 +545,50 @@
       </div>
     </section>
 
+    <section class="work-section wrap" id="selected-work">
+      <div class="work-heading reveal">
+        <div><p class="section-label">Selected work & interactive demonstrations</p><h2>Strategy, made visible.</h2></div>
+        <p>One documented client engagement and three working examples of how market decisions, research and commercial systems connect. Sample interfaces are clearly marked; client outcomes are not invented.</p>
+      </div>
+
+      <article class="work-feature reveal">
+        <div class="work-feature-copy">
+          <div class="work-meta"><span class="work-chip">Case study</span><span class="work-chip">Institutional RWA</span></div>
+          <h3>Kaizen.<br>Building an institutional GTM motion.</h3>
+          <p>A strategy engagement around market perception, institutional credibility, buyer segmentation and commercial execution for a real-world assets business.</p>
+          <a class="work-link" href="work/institutional-rwa-case-study.html">Read the case study <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="work-feature-visual" aria-label="Editorial preview of market research and GTM strategy documents" role="img">
+          <div class="work-visual-sheet back"><div class="work-visual-label">Strategic workstream</div><div class="work-visual-title">ICP &<br>buyer groups</div><div class="work-visual-map"></div><div class="work-visual-nodes"><span></span><span></span><span></span></div></div>
+          <div class="work-visual-sheet"><div class="work-visual-label">Market entry / RWA</div><div class="work-visual-title">Institutional<br>GTM strategy</div><div class="work-visual-map"></div><div class="work-visual-nodes"><span></span><span></span><span></span></div></div>
+        </div>
+      </article>
+
+      <div class="work-demo-grid">
+        <article class="work-demo-card reveal reveal-delay-1">
+          <span class="work-demo-type">Interactive demo 01 · Strategy</span>
+          <h3>GTM Strategy Blueprint</h3>
+          <div class="work-demo-mark" aria-hidden="true"><span class="demo-mark-node">Market</span><span class="demo-mark-node">ICP</span><span class="demo-mark-node">Positioning</span></div>
+          <p>Explore a structured strategy document, from market choice and buyer definition to channel strategy and a 90-day plan.</p>
+          <a href="work/gtm-strategy-blueprint.html">Explore demo <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="work-demo-card reveal reveal-delay-1">
+          <span class="work-demo-type">Interactive demo 02 · Intelligence</span>
+          <h3>Market Intelligence Explorer</h3>
+          <div class="demo-mark-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <p>Filter a sample market, inspect target accounts and buying signals, then see how evidence changes commercial priority.</p>
+          <a href="work/market-intelligence-explorer.html">Explore demo <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="work-demo-card reveal reveal-delay-2">
+          <span class="work-demo-type">Interactive demo 03 · Systems</span>
+          <h3>GTM Systems Architecture</h3>
+          <div class="demo-mark-flow" aria-hidden="true"><i></i><b></b><i></i><b></b><i></i><b></b><i></i></div>
+          <p>Follow data through the commercial workflow. Select each component to inspect its inputs, process, outputs and business use.</p>
+          <a href="work/gtm-systems-architecture.html">Explore demo <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
     <section class="approach-section wrap" id="approach">
       <div class="approach-layout">
         <div class="approach-intro reveal">
@@ -554,7 +645,7 @@
     <div class="footer-inner">
       <div class="footer-brand">GTM practice</div>
       <div>Independent GTM strategy and execution</div>
-      <div class="footer-links"><a href="#capabilities">Services</a><a href="#approach">How we work</a><a href="#top">Back to top ↑</a></div>
+      <div class="footer-links"><a href="#capabilities">Services</a><a href="#selected-work">Selected work</a><a href="#approach">How we work</a><a href="#top">Back to top ↑</a></div>
     </div>
   </footer>
 
